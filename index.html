@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="fontawesome.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid pl-0">
+        <div class="row">
+            <div class="col-12 col-lg-3 col-xl-2 pr-0">
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                        <h3>Dashboard <i class="float-right d-block d-lg-none closebtn fa fa-close"></i></h3>
+                    </div>
+                    <ul class="list-unstyled components">
+                        <li class="active">
+                            <a href="#"><i class="fa fa-user"></i>&nbsp;ADMINISTRATION</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;LOCATION</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-edit"></i>&nbsp;&nbsp;TAG</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-file"></i>&nbsp;&nbsp;ADD DOCUMENT</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-plus-square"></i>&nbsp;&nbsp;ADD SITE</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-trash"></i>&nbsp;&nbsp;DELETE</a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="col-12 col-lg-9 col-xl-10 pl-0 pr-0">
+                <div class="row">
+                    <div class="col-2 d-block d-lg-none">
+                        <div id="main">
+                            <button class="openbtn">&#9776;</button>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-4 content-header">
+                        <h2>Analytics</h2>
+                    </div>
+                    <div class="col-6 col-lg-8 d-none d-md-block  content-header">
+                        <i class="fa fa-calendar-alt fa-2x"></i>
+                        <i class="fa fa-chart-line  fa-2x"></i>
+                        <i class="fa fa-chart-bar  fa-2x"></i>
+                        <i class="fa fa-chart-pie fa-2x"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <section class="section-color">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3 ">
+                                <div class="outer circle">
+                                    <div class="inner circle circle1"><span>25%</span></div>
+                                </div>
+                                <p>UNIQUE VISITOR</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="outer circle">
+                                    <div class="inner circle circle2"><span>50%</span></div>
+                                </div>
+                                <p>RETURNING VISITOR</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="outer circle">
+                                    <div class="inner circle circle3"><span>75%</span></div>
+                                </div>
+                                <p>% OF NEW VISITOR</p>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <div class="outer circle">
+                                    <div class="inner circle circle4"><span>100%</span></div>
+                                </div>
+                                <p>BOUNCE RATE</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section-color">
+                        <div class="">
+                            <div class="col-12" id="line-chart"></div>
+                        </div>
+                    </section>
+                    <section class="section-color visit">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-1">
+                                <h6>
+                                    VISITS
+                                </h6>
+                                <h1>64</h1>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-1">
+                                <h6>
+                                    UNIQUE VISITs
+                                </h6>
+                                <h1>23</h1>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-1">
+                                <h6>
+                                    PAGE VIEWS
+                                </h6>
+                                <h1>662</h1>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-2">
+                                <h6>
+                                    PAGE/VISIT
+                                </h6>
+                                <h1>10.34</h1>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-2">
+                                <h6>
+                                    AVG. VISIT DURATION
+                                </h6>
+                                <h1>00:07:03</h1>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div id="pie"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="d3.v3.min.js"></script>
+    <script src="d3chart.js"></script>
+    <script src="d3pie.js"></script>
+
+</body>
+
+</html>
